@@ -1,4 +1,4 @@
-package com.maa.as1.as1.entity.dto;
+package com.maa.as2.as2.entity.dto.input;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class PostCreateDto {
-    private String title;
-    private String content;
+public class UserCreateDto {
+    private int id;
+    private String name;
 }

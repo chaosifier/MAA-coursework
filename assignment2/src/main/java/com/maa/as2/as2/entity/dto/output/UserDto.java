@@ -1,4 +1,4 @@
-package com.maa.as1.as1.entity.dto;
+package com.maa.as2.as2.entity.dto.output;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,8 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class PostDto {
-    private Long id;
-    private String title;
-    private String content;
+public class UserDto {
+    private int id;
+    private String name;
 }

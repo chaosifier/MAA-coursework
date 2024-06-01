@@ -1,4 +1,4 @@
-package com.maa.as1.as1;
+package com.maa.as2.as2;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class As1Application {
+public class as2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(As1Application.class, args);
+		SpringApplication.run(as2Application.class, args);
 	}
 
 	@Bean

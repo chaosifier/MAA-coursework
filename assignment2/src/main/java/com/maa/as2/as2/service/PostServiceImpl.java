@@ -1,4 +1,4 @@
-package com.maa.as1.as1.service;
+package com.maa.as2.as2.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -7,24 +7,16 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.maa.as1.as1.entity.Post;
-import com.maa.as1.as1.entity.dto.PostCreateDto;
-import com.maa.as1.as1.entity.dto.PostDto;
-import com.maa.as1.as1.repo.PostRepo;
+import com.maa.as2.as2.entity.Post;
+import com.maa.as2.as2.entity.dto.input.PostCreateDto;
+import com.maa.as2.as2.entity.dto.output.PostDto;
+import com.maa.as2.as2.repo.PostRepo;
+
+import lombok.NoArgsConstructor;
 
 @Service
+@NoArgsConstructor
 public class PostServiceImpl implements PostService {
-    // private final PostRepo postRepo;
-
-    // @Autowired
-    // public PostServiceImpl(PostRepo postRepo) {
-    // this.postRepo = postRepo;
-    // }
-
-    // no args constructor is reqired
-    public PostServiceImpl() {
-    }
-
     @Autowired
     ModelMapper modelMapper;
 
@@ -43,12 +35,13 @@ public class PostServiceImpl implements PostService {
     }
 
     @Override
-    public Post findById(long postId) {
-        return this.postRepo.getById(postId);
+    public Post findById(int postId) {
+        return this.postRepo.findById(postId).orElse(null);
     }
 
     @Override
-    public Long savePost(PostCreateDto post){
-      return this.postRepo.savePost(post);
+    public void create(PostCreateDto post){
+      var newPost = new Post(post.getTitle(), post.getContent(), post.getAuthorId());
+      this.postRepo.save(newPost);
     }
 }
