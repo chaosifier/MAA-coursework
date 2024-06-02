@@ -1,4 +1,4 @@
-package com.maa.as3.as3.entity;
+package com.maa.as4.as4.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 

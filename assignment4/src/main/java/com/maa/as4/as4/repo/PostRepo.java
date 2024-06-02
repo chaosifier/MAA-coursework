@@ -1,4 +1,4 @@
-package com.maa.as3.as3.repo;
+package com.maa.as4.as4.repo;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.maa.as3.as3.entity.Post;
+import com.maa.as4.as4.entity.Post;
 
 @Repository
 public interface PostRepo extends JpaRepository<Post, Integer> {
