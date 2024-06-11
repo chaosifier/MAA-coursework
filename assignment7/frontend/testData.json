@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "id": "2",
+      "title": "Blog 2",
+      "author": "Ram",
+      "content": "This is the blog content"
+    },
+    {
+      "id": "3",
+      "title": "Blog 3",
+      "author": "Hari",
+      "content": "This is the blog content"
+    },
+    {
+      "id": "4",
+      "title": "Blog 4",
+      "author": "Bishal",
+      "content": "This is the blog content"
+    }
+  ]
+}
