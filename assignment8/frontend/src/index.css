@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main-container {
+  height: 100%;
+  overflow: hidden;
+  margin: 20px 10%;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.post {
+  background: rgb(200, 150, 248);
+  border-radius: 5px;
+  border: 5px;
+  border-style: solid;
+  border-color: rgb(124, 166, 245);
+  margin: 20px;
+  padding: 10px;
+  width: 200px;
+}
+
+.post > .post-card-body{
+  margin-bottom:20px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.post span {
+  color: black;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 10px;
+}
+
+.post>.btn {
+  align-items: center;
+}
+
+.btn {
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10px;
+  font-size: medium;
+}
+
+.btn-primary {
+  border-color: blueviolet;
+  background: blue;
+  color: white;
+}
+
+.btn-danger {
+  border-color: salmon;
+  background: orange;
+  color: black;
+}
+
+.form {
+  margin: 20px;
+  background-color: aqua;
+  padding: 15px;
+  border-radius: 10px;
+  width:400px;
+}
+
+.form-head {
+  margin-bottom: 20px;
+}
+
+.form-head>span {
+  font-size: 18pt;
+  font-weight: 700;
+}
+
+.form-body>.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group>input {
+  padding: 10px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.form-group>textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 2px;
+  height: 100px;
+}
+
+.form-group>span {
+  font-size: medium;
+}
+
+.form-actions {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+}
